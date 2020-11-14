@@ -40,8 +40,6 @@ public class UserDao {
             return null;
         }
     }
-
-
     public User read(int userId) {
         try (Connection conn = DbUtil.getConnection();
              PreparedStatement preparedStatement = conn.prepareStatement(READ_USER_QUERY);) {
